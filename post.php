@@ -23,6 +23,15 @@
     <center><b>Want to see topic discussion <?php echo $_GET["id"] ?>?</b></center>
     <table id = "MainTable" align = "Center">
 
+    <center><b> <?php
+    if ($_GET["id"]%2==0)
+    echo "This topic discussion is EVEN";
+    else
+    echo "This topic discussion is ODD";
+    ?>
+    </b>
+    </center>
+
         <tr><td style = "background-color:#6CD2FE;" colspan = "2">Share your opinion!</td></tr>
 		<tr><td><textarea class = "MessageBox" name = "MainBox" rows = "5" cols = "5"></textarea></td></tr>
 	<form action = "registerPage.html" method = "post">
@@ -31,6 +40,6 @@
 
     </table>
 </style>
-<p align = "Center"><a href = "WebUpgradeMain.html">Back to Main page</a></p>
+<p align = "Center"><a href = "WebUpgradeMain.php">Back to Main page</a></p>
 </body>
 </html>

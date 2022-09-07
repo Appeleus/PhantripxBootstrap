@@ -9,8 +9,23 @@
     <h1 align = "center">PhanTrip Webboard</h1>
     <hr>
     <div align = "center">
-        Login with<br>
-        Login = <?php echo $_POST["loginMain"]; ?><br>
-        Password = <?php echo $_POST["passwordMain"]; ?>
+        <?php 
+        $Login = $_POST["loginMain"]; 
+		$Password = $_POST["passwordMain"]; 
+        if ($_POST["loginMain"] == "admin" && $_POST["passwordMain"] == "ad1234")
+        echo "Welcome back ADMIN";
+
+        else if ($_POST["loginMain"] == "member" && $_POST["passwordMain"] == "mem1234")
+        echo "Welcome back MEMBER!";
+
+        else echo "Account name or Password incorrect, please try again."
+        ?><br>
+        
+
+        
+
+
+
+<p align = "Center"><a href = "WebUpgradeMain.php">Back to Main page</a></p>
 </body>
 </html>
