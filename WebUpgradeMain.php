@@ -23,10 +23,10 @@
 
 	<form action = "post.php" method = "GET">
         <ul>
-        </ul>
+        
         <?php
-        for($i = 0; $i <= 10; $i++) {
-            echo "Cuck";
+        for($i = 1; $i <= 10; $i++) {
+            echo "<li><a href = 'post.php?id=$i'>Topic discussion $i</a></li>";
         }
         ?>
     </ul>
