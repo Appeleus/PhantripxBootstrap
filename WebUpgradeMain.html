@@ -6,7 +6,8 @@
     <title>PhanTripDotCom</title>
 
 </head>
-	<body>
+
+<body>
     <h1><b><center>PhanTrip Webboard</center></b></h1>
     <hr>
     <p style = " float:right "><a href = "loginPage.html"> Login </a></p>
@@ -20,12 +21,16 @@
     </p>
 
 
-<form action = "post.php" method = "GET">
-    <li><a href = "post.php?id=1">Topic discussion 1</a></li>
-    <li><a href = "post.php?id=2">Topic discussion 2</a></li>
-    <li><a href = "post.php?id=3">Topic discussion 3</a></li>
-    <li><a href = "post.php?id=4">Topic discussion 4</a></li>
-    <li><a href = "post.php?id=5">Topic discussion 5</a></li>
-	</body>
-</form>
+	<form action = "post.php" method = "GET">
+        <ul>
+        </ul>
+        <?php
+        for($i = 0; $i <= 10; $i++) {
+            echo "Cuck";
+        }
+        ?>
+    </ul>
+	</form>
+
+</body>
 </html>
