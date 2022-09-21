@@ -34,7 +34,7 @@
 
         <tr><td style = "background-color:#6CD2FE;" colspan = "2">Share your opinion!</td></tr>
 		<tr><td><textarea class = "MessageBox" name = "MainBox" rows = "5" cols = "5"></textarea></td></tr>
-	<form action = "registerPage.html" method = "post">
+	<form action = "registerPage.php" method = "post">
         <td align = "center" colspan = "2"><input type = "submit" value="Send"></td>
     </form>
 
