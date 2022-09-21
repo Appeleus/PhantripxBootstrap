@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +15,28 @@
     <div align = "center">
         <?php 
         $Login = $_POST["loginMain"]; 
-		$Password = $_POST["passwordMain"]; 
-        if ($_POST["loginMain"] == "admin" && $_POST["passwordMain"] == "ad1234")
-        echo "Welcome back ADMIN";
+		$Password = $_POST["passwordMain"];
 
-        else if ($_POST["loginMain"] == "member" && $_POST["passwordMain"] == "mem1234")
-        echo "Welcome back MEMBER!";
+        if ($Login == "admin" && $Password == "ad1234")
+        {
+        echo "Welcome back " . strtoupper($Login);
+		$_SESSION["username"] = $Login;
+        $_SESSION["role"] = "a";
+        $_SESSION["id"] = session_id();
+        }
 
-        else echo "Account name or Password incorrect, please try again."
+        else if ($Login == "member" && $Password == "mem1234")
+        {
+        echo "Welcome back " . strtoupper($Login);
+		$_SESSION["username"] = $Login;
+        $_SESSION["role"] = "m";
+        $_SESSION["id"] = session_id();
+        }
+
+        else echo "Account name or Password incorrect, please try again.";
+		
+        
+        
         ?><br>
         
 

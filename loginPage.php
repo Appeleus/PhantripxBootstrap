@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (isset($_SESSION['id']))
+{
+	header("location:WebUpgradeMain.php");
+	die();
+}
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,6 +39,6 @@
 </style>
 </form>
 
-<p align = "Center">Still not a member? <a href = "registerPage.html">Register here</a></p>
+<p align = "Center">Still not a member? <a href = "registerPage.php">Register here</a></p>
 </body>
 </html>

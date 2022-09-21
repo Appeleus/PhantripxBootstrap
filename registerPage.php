@@ -1,3 +1,12 @@
+<?php
+session_start();
+	if (isset($_SESSION['id']))
+    {
+	header("location:WebUpgradeMain.php");
+	die();
+	}
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +37,7 @@
         	<input type = "radio" name="gender" value ="m"> Other <br></td>
         </tr>
         <tr><td>Email : </td><td><input type = "text" name="email" ></td></tr>
-	<form action = "registerPage.html" method = "post">
+	<form action = "registerPage.php" method = "post">
         <td align = "center" colspan = "2"><input type = "submit" value="Register"></td>
     </form>
     </table>
