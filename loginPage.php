@@ -24,6 +24,7 @@ if (isset($_SESSION['id']))
 
 </head>
 <body>
+<?php include "nav.php";?>
     <h1><b><center>PhanTrip Webboard</center></b></h1>
     <hr>
 
